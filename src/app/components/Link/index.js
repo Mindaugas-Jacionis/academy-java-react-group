@@ -3,7 +3,7 @@ import './index.css';
 
 function Link(props) {
   return (
-    <a target={props.target || '_blank'} href={props.href}>
+    <a className="Link" target={props.target || '_blank'} href={props.href}>
       {props.children}
     </a>
   );
