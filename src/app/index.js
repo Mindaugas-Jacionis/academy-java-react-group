@@ -3,8 +3,16 @@ import { FaGithubAlt, FaEnvelope, FaPhone, FaMapMarker, FaLinkedinIn } from 'rea
 
 import Header from './components/Header';
 import Contacts from './components/Contacts';
+import Education from './components/Education';
 import './App.css';
 
+const education = [
+  {
+    degree: 'PHD',
+    university: 'Hogwartz',
+    year: '2020 - present',
+  },
+];
 const contacts = [
   {
     icon: FaMapMarker,
@@ -40,6 +48,7 @@ function App() {
       <main className="App--content">
         <div className="App--content-left">
           <Contacts items={contacts} />
+          <Education items={education} />
         </div>
         <div className="App--content-right">Main content</div>
       </main>
