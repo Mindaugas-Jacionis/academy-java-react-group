@@ -4,8 +4,19 @@ import { FaGithubAlt, FaEnvelope, FaPhone, FaMapMarker, FaLinkedinIn } from 'rea
 import Header from './components/Header';
 import Contacts from './components/Contacts';
 import Education from './components/Education';
+import Skills from './components/Skills';
 import './App.css';
 
+const skills = [
+  { text: 'Sleeping', level: 'advanced' },
+  { text: 'Running', level: 'beginner' },
+  { text: 'Coding', level: 'intermediate' },
+  { text: 'Speaking', level: 'intermediate' },
+  { text: 'Listening', level: 'beginner' },
+  { text: 'Driving', level: 'beginner' },
+  { text: 'Eating', level: 'advanced' },
+  { text: 'MS Word', level: 'beginner' },
+];
 const education = [
   {
     degree: 'PHD',
@@ -49,6 +60,7 @@ function App() {
         <div className="App--content-left">
           <Contacts items={contacts} />
           <Education items={education} />
+          <Skills items={skills} />
         </div>
         <div className="App--content-right">Main content</div>
       </main>
