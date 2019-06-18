@@ -7,3 +7,12 @@
   border-right: 20px solid #48474c;
   border-left: 20px solid #48474c;
 }
+
+.App--content {
+  display: flex;
+}
+
+.App--content-left {
+  width: 35%;
+  background: green;
+}
